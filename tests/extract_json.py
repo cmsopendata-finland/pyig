@@ -1,3 +1,7 @@
+"""
+Extract plottable JSON from an ig file.
+"""
+
 from igfile import *
 
 import sys
@@ -9,7 +13,7 @@ import fnmatch
 import os
 
 if len(sys.argv) != 3:
-    print 'Usage: python root2json.py [ig file name] [json file name]'
+    print 'Usage: python extract_json.py [ig file name] [json file name]'
     sys.exit()
 
 igfile_name = sys.argv[1]
